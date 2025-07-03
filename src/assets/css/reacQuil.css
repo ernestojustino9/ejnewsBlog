@@ -1,0 +1,44 @@
+.custom-quill {
+    overflow-y: scroll;
+    resize: vertical;
+}
+
+/* Adicione seus estilos personalizados aqui */
+.custom-quill .ql-toolbar {
+    background-color: #f8f9fa;
+    /* Altere a cor de fundo da barra de ferramentas */
+    border-bottom: 2px solid #007bff;
+    /* Adicione uma borda na parte inferior da barra de ferramentas */
+}
+
+.custom-quill .ql-toolbar button {
+    color: #007bff;
+    /* Altere a cor do texto dos botões */
+}
+
+/* Remova as bordas padrão */
+.custom-quill .ql-container {
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    /* background: #fefcfc; */
+}
+
+/* Ajuste as linhas e margens */
+.custom-quill .ql-editor {
+    font-size: 16px;
+    /* Defina o tamanho da fonte conforme desejado */
+    line-height: 1.5;
+    /* Defina a altura da linha conforme desejado */
+    min-height: 150px;
+    /* Defina a altura mínima conforme desejado */
+    margin: 8px 0;
+    /* Adicione margens conforme desejado */
+}
+
+/* Estilo de foco */
+.custom-quill .ql-container:focus-within {
+    border-color: #007bff;
+    /* Mude a cor da borda quando focado */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    /* Adicione um efeito de sombra quando focado */
+}

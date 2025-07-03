@@ -1,0 +1,14 @@
+[build]
+    command = "CI='' npm run build"
+    functions = "netlify/functions"
+    publish = "dist"
+    base = "/"
+
+  [build.environment]
+    NPM_FLAGS = "--force"
+
+    
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
