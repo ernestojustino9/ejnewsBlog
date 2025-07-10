@@ -1,12 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react'
 import Header from '../../components/layouts/Header'
+import img from "../../assets/img/about/Logotipo.jpg"
 import { AuthContext } from '../../contexts/auth';
 import { Link, useParams } from 'react-router-dom';
 import { getNoticiaRelacionados, getNoticiaSlug } from '../../services/BlogService';
+import Comentario from '../comentario/Comentario';
 import Subescrever from '../subescrever/Subescrever';
+import * as messages from "../../components/message/toastr";
 import { getCategorias } from '../../services/CategoriaService';
 import { getPerfilUserIdRelacionados } from '../../services/UsuarioService';
-import ModalGCR from '../modalGCR/modalGCR';
 
 const ViewBlog = () => {
   // 
@@ -162,7 +164,8 @@ const ViewBlog = () => {
 
               </div>
               {/*  */}
-              <ModalGCR slug={idNoticia} />
+              {/* <Comentario /> */}
+              <Comentario slug={idNoticia} />
               {/*  */}
             </div>
             {/*  */}
