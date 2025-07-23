@@ -30,7 +30,7 @@ const Login = () => {
                 {/* <div className="card login-form mb-0"> */}
                 <div >
                     <div className="card-body pt-5" style={{ textAlign: "center" }}>
-                        <a className="text-center" href="#"> <h4>EJ-Developer</h4></a>
+                        <a className="text-center" href="#"> <h4>Ej-News</h4></a>
 
                         <form className="mt-5 mb-5 login-input" onSubmit={handleLogin}>
                             <div className="form-group">

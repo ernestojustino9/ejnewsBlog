@@ -75,9 +75,10 @@ const Header = () => {
                   <li className=" smooth-menu active"></li>
                   <li className=" smooth-menu"><Link className={` ${ativar === "/" ? "active" : ""
                     } `} to="/">Inicio</Link></li>
-                  <li className="smooth-menu"><a href="#about">Sobre</a></li>
+                  {/* <li className="smooth-menu"><a href="#about">Sobre</a></li> */}
                   <li className="smooth-menu"><a href="#contact">contacto</a></li>
-                  {isAuthenticated ? <li className="smooth-menu"><Link to={`/account/${user?.id}`}>Minha conta</Link></li> : ""}
+                  {/* {isAuthenticated ?
+                   <li className="smooth-menu"><Link to={`/account/${user?.id}`}>Minha conta</Link></li> : ""} */}
                   {!user ?
                     <li className="smooth-menu"><Link
                       to=""
@@ -119,7 +120,7 @@ const Header = () => {
                   <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                     <i className="fa fa-bars"></i>
                   </button>
-                  <a className="navbar-brand" href="index.html">Ej-Developer</a>
+                  <a className="navbar-brand" href="index.html">Ej-News</a>
                 </div>
                 {/* <!-- End Header Navigation --> */}
                 <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
@@ -127,12 +128,9 @@ const Header = () => {
                     <li className=" smooth-menu active"></li>
                     <li className=" smooth-menu"><Link className={` ${ativar === "/" ? "active" : ""
                       } `} to="/">Inicio</Link></li>
-                    <li className="smooth-menu"><a href="#about">Sobre</a></li>
-                    <li className="smooth-menu"><a href="#skills">skills</a></li>
-                    <li className="smooth-menu"><a href="#service">Serviço</a></li>
+                    {/* <li className="smooth-menu"><a href="#about">Sobre</a></li> */}
                     <li className="smooth-menu"><a href="#contact">contacto</a></li>
-                    <li className="smooth-menu"><Link to="/blog">Blog</Link></li>
-                    {isAuthenticated ? <li className="smooth-menu"><Link to={`/account/${logado}`}>Minha conta</Link></li> : ""}
+                    {/* {isAuthenticated ? <li className="smooth-menu"><Link to={`/account/${logado}`}>Minha conta</Link></li> : ""} */}
                     {!user ?
                       <li className="smooth-menu"><Link
                         to=""

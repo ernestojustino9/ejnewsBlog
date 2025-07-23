@@ -7,12 +7,21 @@ const Footer = () => {
     <div>
       <br />
       <br />
-      <footer id="footer-copyright" className="footer-copyright" style={{ background: "#01153e", color: "#fff" }}>
+      <footer
+        id="footer-copyright"
+        className="footer-copyright"
+        style={{ background: "#01153e", color: "#fff" }}
+      >
         <div className="container">
           <div className="hm-footer-copyright text-center">
-            <p>
+            {/* <p>
               Todos os direitos reservados &copy; {ano} Desenvolvido por EJ-Developer
-            </p>
+            </p> */}
+            <a href="https://web.facebook.com/ejdeveloper" target="_blank">
+              <p style={{ fontWeight: "bold" }}>
+                &copy; {ano} Desenvolvido por EJ-Developer
+              </p>
+            </a>
           </div>
         </div>
 
@@ -20,9 +29,7 @@ const Footer = () => {
           <div className="return-to-top">
             <i className="fa fa-angle-up " id="scroll-top"></i>
           </div>
-
         </div>
-
       </footer>
       {/* <!--/Footer--> */}
     </div>

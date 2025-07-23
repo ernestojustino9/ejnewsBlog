@@ -3,7 +3,7 @@ import { getToken } from "./auth";
 
 const api = axios.create({
   // baseURL: "https://ejportifolioapi.onrender.com/api/",
-  baseURL: "https://ejportifolioapi.onrender.com/api/",
+  baseURL: "http://localhost:3001/api/",
 });
 
 api.interceptors.request.use(async (config) => {
